@@ -33,7 +33,7 @@ def check_cloud_provider() -> Tuple[str, str, str]:
     hf_token, groq_api_key = get_cloud_api_keys()
     
     if groq_api_key:
-        return "groq", groq_api_key, "llama-3.2-1b-preview"
+        return "groq", groq_api_key, "llama-3.1-8b-instant"
     elif hf_token:
         return "huggingface", hf_token, "meta-llama/Llama-3.2-1B-Instruct"
         
